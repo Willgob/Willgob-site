@@ -31,7 +31,7 @@ body::before {
 
 h1.main-title {
 
-    /* use table display so the element shrink-wraps and can be centered with margin:auto */
+ 
     display: table;
     margin: 30px auto;
     background-color: rgba(255, 255, 255, 0.5);  /* semi-transparent white background */
@@ -44,4 +44,5 @@ h1.main-title {
     border-bottom: 2px solid #eee;
     padding-bottom: 10px;
     text-align: center;
+    
 }
