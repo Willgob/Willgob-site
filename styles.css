@@ -46,6 +46,9 @@ h1.main-title {
     padding-bottom: 10px;
     text-align: center;
 
+    user-select: none;
+    cursor: default;
+
 }
 
 .sidebar {
