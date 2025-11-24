@@ -116,3 +116,32 @@ h2.secret {
     color: #ff1100;
 
 }
+
+.button-container {
+    display: flex; 
+    gap: 15px; /* Adds space between the buttons */
+    margin-bottom: 20px; /* Space below the button block */
+}
+
+.secret-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    color: #007bff;
+    transition: background-color 0.2s; /* Smooth hover effect */
+}
+
+.secret-button:hover {
+    background-color: #e6f7ff;
+}
+
+#result-text {
+    font-size: 22px;
+    font-weight: bold;
+    min-height: 30px;
+    color: #ff1100;
+    
+}
