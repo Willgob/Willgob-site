@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const resultTextElement = document.getElementById('secret-result-text')
 
     function handleYesClick() {
-        resultTextElement.textContent = "You confirmed YES! Thank you for your input.";
+        resultTextElement.textContent = "Elena is sooo annoying";
         resultTextElement.style.color = "#28a745"; // Green color
     }
 
