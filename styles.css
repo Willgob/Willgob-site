@@ -105,7 +105,7 @@ h1.main-title {
     height: auto;
 }
 
-h2.About_Me_Hello {
+body .content h2.About_Me_Hello {
     font-family: 'Audiowide', sans-serif;
     color: #2d6c96;  /* dark blue text colour */
     text-align: center;
