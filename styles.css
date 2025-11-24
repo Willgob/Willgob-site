@@ -110,3 +110,9 @@ body .content h2.About_Me {
     color: #a1d6f9; 
     text-align: left;
 }
+
+h2.secret {
+    font-family:'Times New Roman', Times, serif;
+    color: #ff1100;
+
+}
