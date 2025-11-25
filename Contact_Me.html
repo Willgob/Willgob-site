@@ -39,33 +39,55 @@
       <p>Phone: <a href="tel:+61493713851">0493 713 851</a></p>
       <p>City: <a href="https://www.google.com/maps/place/Sydney+NSW/@-33.8472349,150.6023261,95498m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6b129838f39a743f:0x3017d681632a850!8m2!3d-33.8727409!4d151.2057136!16zL20vMDZ5NTc?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"  target="_blank">Sydney, Australia</a></p>
 
-    <section id="contact-form">
-      <h2>Send Me a Message</h2>
-
-      <!-- THE NETLIFY MAGIC IS IN THIS LINE: data-netlify="true" -->
-      <form name="contact" netifly>
-
-          <p>
-              <label for="name">Name:</label><br>
-              <input type="text" name="name" id="name" required>
+    <!-- START: Netlify Contact Form -->
+      <form 
+          name="contact-me-form" 
+          method="POST" 
+          data-netlify="true" 
+          data-netlify-honeypot="bot-field" 
+          action="/thank-you/"
+      >
+          <!-- Hidden Field for Netlify Spam Protection (Honeypot) -->
+          <!-- You MUST keep this input and the data-netlify-honeypot attribute -->
+          <p class="hidden-field-for-bots">
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
           </p>
 
+          <!-- 1. Name Field (Required) -->
           <p>
-              <label for="email">Email:</label><br>
-              <input type="email" name="email" id="email" required>
+              <label for="name">Your Name:</label>
+              <input type="text" name="name" id="name" required />
           </p>
 
+          <!-- 2. Email Field (Required) -->
           <p>
-              <label for="message">Message:</label><br>
-              <textarea name="message" id="message" required></textarea>
+              <label for="email">Your Email:</label>
+              <input type="email" name="email" id="email" required />
           </p>
 
+          <!-- 3. Optional Role/Selection Field (as per your example) -->
+          <p>
+              <label for="role">Reason for Contact:</label>
+              <!-- Note: This type of field (multiple select) is uncommon for contact forms but works -->
+              <select name="reason[]" id="role" multiple>
+                  <option value="leader">Project/Job Inquiry</option>
+                  <option value="follower">General Question</option>
+                  <option value="feedback">Website Feedback</option>
+              </select>
+          </p>
+
+          <!-- 4. Message/Textarea Field (Required) -->
+          <p>
+              <label for="message">Your Message:</label>
+              <textarea name="message" id="message" rows="5" required></textarea>
+          </p>
+
+          <!-- 5. Submit Button -->
           <p>
               <button type="submit">Send Message</button>
           </p>
 
       </form>
-  </section>
       
 
     </div>

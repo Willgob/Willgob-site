@@ -232,3 +232,43 @@ a:visited {
 a:active {
     color: #FF6347;
 }
+
+
+/* Netlify Honeypot Spam Protection */
+/* This class must hide the 'bot-field' input visually */
+.hidden-field-for-bots {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+/* Optional: Basic styling to make the form look cleaner */
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block; /* Makes the label take up its own line */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Includes padding in the element's total width */
+}
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff; /* Example color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
