@@ -163,3 +163,16 @@ h3.Journal-Intro {
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
+.sidebar-links {
+    display: block;
+    padding: 10px 15px;
+    margin: 8px 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border: 1px solid #175e8a;
+    background-color: #115077a6;
+    border-radius: 4px;
+    text-align: center;
+    width: 150px;
+    transition: background-color 0.3s, transform 0.3s;
+}
