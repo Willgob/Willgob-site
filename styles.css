@@ -299,4 +299,5 @@ form[name="contact-me-form"] button[type="submit"]:hover {
     text-shadow: #1b4c73 3px 3px 5px;
     font-family: sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 24px;
+    color: beige;
 }
