@@ -311,3 +311,7 @@ form[name="contact-me-form"] button[type="submit"]:hover {
 #journal h1, #journal h2, #journal h3 {
   margin-top: 1.5em;
 }
+
+.header-press:hover {
+    text-decoration: none;
+}
